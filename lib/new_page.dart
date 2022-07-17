@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/registration_screen.dart';
 
 class NextPage extends StatefulWidget {
   const NextPage({Key? key}) : super(key: key);
@@ -12,6 +13,14 @@ class NextPageState extends State<NextPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+      leading:  InkWell(
+        onTap: (){
+      Navigator.push(context, MaterialPageRoute(builder: (context) => const RegistrationScreen()));}, 
+      )
+    ),
+    body: 
+      Text("next page is here"));
   }
 }
