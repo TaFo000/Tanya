@@ -44,7 +44,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               ),
               
               Form(
-                autovalidateMode: const AutovalidateMode(),
+                ///autovalidateMode: const AutovalidateMode(),
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: 'email',
